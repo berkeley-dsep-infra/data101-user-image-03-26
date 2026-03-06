@@ -1,7 +1,7 @@
 name: data101
 
 channels:
-- conda-forge
+  - conda-forge
 
 dependencies:
   # Postgresql client DH-363
@@ -59,7 +59,7 @@ dependencies:
   - pandocfilters==1.5.0
   - pep8==1.7.1
   - pgspecial==2.2.1
-#  - pillow==10.0.1 
+#  - pillow==10.0.1
 #  - pooch==1.6.0
   - prettytable==3.16.0
   - psycopg==3.2.9
@@ -88,19 +88,16 @@ dependencies:
 #  - websockify==0.11.0
 
   - pip:
-    # items required for basic functionality
-    # other stuff
-    - iwut==0.0.4
-    # [DH-418] cannot get mamba to install this
-#    - tensorflow-cpu==2.18.0
-    # [DH-418] cannot get mamba to install this
-#    - geopandas==0.12.1
-    # disable until fixed (probably this:  https://github.com/jupyterlab/jupyter-collaboration/issues/162)
-    # DH-418, 2024-01-16, above issue still not fixed.  Also this package is available in condaforge
-    # https://anaconda.org/conda-forge/jupyter-collaboration
-    # - jupyter_collaboration==1.0.1
-    # - git+https://github.com/shaneknapp/python-popularity-contest.git@add-error-handling
-    - jupyterlab-a11y-checker==0.1.3 # Adding a11y-checker for Data 101 staff's exploration
-
-
-
+      # items required for basic functionality
+      # other stuff
+      - iwut==0.0.4
+      # [DH-418] cannot get mamba to install this
+  #    - tensorflow-cpu==2.18.0
+      # [DH-418] cannot get mamba to install this
+  #    - geopandas==0.12.1
+      # disable until fixed (probably this:  https://github.com/jupyterlab/jupyter-collaboration/issues/162)
+      # DH-418, 2024-01-16, above issue still not fixed.  Also this package is available in condaforge
+      # https://anaconda.org/conda-forge/jupyter-collaboration
+      # - jupyter_collaboration==1.0.1
+      # - git+https://github.com/shaneknapp/python-popularity-contest.git@add-error-handling
+      - jupyterlab-a11y-checker==0.1.3 # Adding a11y-checker for Data 101 staff's exploration
