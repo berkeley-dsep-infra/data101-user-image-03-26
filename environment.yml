@@ -1,0 +1,106 @@
+name: data101
+
+channels:
+- conda-forge
+
+dependencies:
+  # Postgresql client DH-363
+  - postgresql==17.5
+  # other stuff
+  # 2025-01-22 - Jon F, unless otherwise noted each commented out package is one
+  # the instructors for Spring 2025 have said is not required.  Leaving them
+  # commented out for now until end of semester when I'll likely remove them
+  # from the file entirely.
+  - altair==5.5.0
+  - beautifulsoup4==4.13.4
+  - black==25.1.0
+  - bokeh==3.7.3
+#  - bqplot==0.12.34
+#  - cartopy==0.24.0
+  - coverage==7.10.1
+  - cython==3.1.2
+  - dbt-postgres==1.9.0
+#  - distributed==2023.6.0
+  - folium==0.20.0
+#  - fortran-magic==0.7
+#  - graphviz==9.0.0
+  - h5netcdf==1.6.3
+#  - h5py==3.7.0
+#  - hdf4==4.2.15
+#  - hdf5==1.12.2
+#  - intake==0.6.5
+#  - intake-esm==2021.8.17
+#  - intake-xarray==0.6.0
+#  - ipycanvas==0.12.1
+#  - ipydatagrid==1.4.0
+#  - ipympl==0.9.2
+  - ipyparallel==9.0.1
+  - ipython-sql==0.3.9
+  - ipywidgets==8.1.7
+  - jsonschema==4.24.0
+  - jupysql==0.11.1
+  - jupyter-book==0.15.1
+#  - jupyter_bokeh==2.0.4
+  - jupyterlab-favorites==3.2.2
+  - jupyterlab-geojson==3.4.0
+  - jupyterlab-variableinspector==3.2.4
+#  - jupyterlab_pygments==0.2.2
+  - jupyterlab_server==2.27.3
+  - jupyterlab_widgets==3.0.15
+  - matplotlib-inline==0.1.7
+#  - micro==2.0.8
+#  - mock==4.0.3
+  - mongo-tools==100.12.2
+#  - nbclassic==1.0.0
+  - nbdime==4.0.2
+  - networkx==2.8.6
+  - numba==0.61.2
+  - pandoc==2.12
+  - pandocfilters==1.5.0
+  - pep8==1.7.1
+  - pgspecial==2.2.1
+#  - pillow==10.0.1 
+#  - pooch==1.6.0
+  - prettytable==3.16.0
+  - psycopg==3.2.9
+  - pyarrow==20.0.0
+  - pymongo==4.13.2
+  - pypdf2==3.0.1
+  - pytables==3.10.2
+  - pytest==8.4.1
+  - pytest-cov==6.2.1
+  - pytest-notebook==0.10.0
+#  - python-graphviz==0.20.1
+  - python-pdfkit==1.0.0
+  - requests==2.32.4
+#  - scikit-image==0.19.3
+#  - scikit-learn==1.2.2
+#  - sphinx-jupyterbook-latex==0.5.2
+  - sqlalchemy==2.0.41
+  - sqlparse==0.5.3
+#  - statsmodels==0.14.0
+#  - sympy==1.13.2
+#  - syncthing==1.20.4
+#  - tornado==6.2.0
+  - tqdm==4.67.1
+#  - xarray==2023.5.0
+  - xlrd==2.0.1
+#  - websockify==0.11.0
+
+  - pip:
+    # items required for basic functionality
+    # other stuff
+    - iwut==0.0.4
+    # [DH-418] cannot get mamba to install this
+#    - tensorflow-cpu==2.18.0
+    # [DH-418] cannot get mamba to install this
+#    - geopandas==0.12.1
+    # disable until fixed (probably this:  https://github.com/jupyterlab/jupyter-collaboration/issues/162)
+    # DH-418, 2024-01-16, above issue still not fixed.  Also this package is available in condaforge
+    # https://anaconda.org/conda-forge/jupyter-collaboration
+    # - jupyter_collaboration==1.0.1
+    # - git+https://github.com/shaneknapp/python-popularity-contest.git@add-error-handling
+    - jupyterlab-a11y-checker==0.1.3 # Adding a11y-checker for Data 101 staff's exploration
+
+
+
